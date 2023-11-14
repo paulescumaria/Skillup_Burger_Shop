@@ -1,0 +1,82 @@
+.containerLog {
+    display: flex;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 80vw;
+    margin: 5vh 0 5vh 0;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 0 0 15px 0;
+}
+
+.btns > button {
+    text-decoration: none;
+    border: 0;
+    width: 40vw;
+    height: 5vh;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
+}
+
+.icons > a {
+    color: #0D6EFD;
+}
+
+.notMember, label {
+    display: inline;
+}
+
+h4 {
+    text-align: center;
+}
+
+form > input {
+    width: 80vw;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.check > div {
+    margin: 20px 20px 0 20px;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signIn {
+    width: 80vw;
+    border: 0;
+    padding: 5px 0 5px 0;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0D6EFD;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+div > a > h6 {
+    color: #0D6EFD;
+}
