@@ -13,6 +13,9 @@ import Profile from "./components/profile/Profile";
 
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
+import Cart from "./components/cart/Cart";
+import Shipping from "./components/cart/Shipping";
+import MyOrders from "./components/myOrders/MyOrders";
 
 
 import "./styles/app.scss";
@@ -35,24 +38,20 @@ function App() {
     <Router>
       <Header isAuthenticated={true} />
       <Routes>
+        {/* <Route path="/header" element={<Header />}/> */}
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
                     {/* Add the Route for CART */}
-      
+        <Route path="/cart" element={<Cart />} />
                     {/* Add the Route for SHIPPING */}
-        
+        <Route path="/shipping" element={<Shipping />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
                     {/* Add the Route for MY ORDERS */}
-
+        <Route path="/myorders" element={<MyOrders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
-      
-       
-
-        
       </Routes>
-
       <Footer />
     </Router>
   );

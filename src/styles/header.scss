@@ -1,5 +1,13 @@
 @import "colors";
 
+nav > a {
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
 nav {
   height: 5rem;
   padding: 2rem;
@@ -8,6 +16,7 @@ nav {
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
   background-color: white;
+  width: 100%;
 
   > div {
     display: flex;
@@ -38,6 +47,7 @@ nav {
     }
   }
 }
+
 
 @media screen and (max-width: 600px) {
   nav {

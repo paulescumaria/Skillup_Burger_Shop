@@ -23,7 +23,6 @@
   z-index: 1;
   min-width: 120px;
   background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
 }
 
@@ -37,4 +36,13 @@
 
 .dropdown-item:hover {
   background-color: #f5f5f5;
+}
+
+nav .navbar {
+  box-shadow: none;
+  padding: 0;
+}
+
+.navbar .container {
+  padding: 0px;
 }

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "C:/Users/Ale/Desktop/webdevbasics/finalProject/Skillup_Burger_Shop/src/styles/DropdownMenu.scss"
+
 
 function DropdownMenu() {
   const [navLinks, setNavLinks] = useState([]);
 
   useEffect(() => {
     const navs = [
-      { name: "Login", path: "/login" },
+      {name: "Login", path: "/login" },
       {name:"Orders", path:"/myorders"},
       {name:"Logout", path:"/login"}
       
@@ -16,26 +18,26 @@ function DropdownMenu() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar">
         <div className="container">
           <a className="navbar-brand" href="#">
           
           </a>
-          <div class="btn-group">
+          <div className="btn-group">
             <button
               type="button"
-              class="btn btn-primary dropdown-toggle"
+              className="btn dropdown-toggle"
               data-bs-toggle="dropdown"
               data-bs-display="static"
               aria-expanded="false"
             >
               Menu
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul className="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
                 <li key={i}>
                   <Link to={d.path}>
-                    <button class="dropdown-item" type="button">
+                    <button className="dropdown-item" type="button">
                       {d.name}
                     </button>
                   </Link>
