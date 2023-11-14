@@ -49,6 +49,10 @@
         background-color: $reddark;
       }
     }
+    > textarea{
+      height: 100vh;
+    }
+
   }
 
   .formBorder {
