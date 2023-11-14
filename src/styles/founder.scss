@@ -3,15 +3,12 @@
 .founder {
   width: 100%;
   height: 80vh;
-  background-color: $red;
 
   > div {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     width: 50%;
     text-align: center;
     margin: auto;
@@ -31,4 +28,11 @@
       line-height: 200%;
     }
   }
+}
+
+.explore {
+  text-decoration: none;
+  border: 0;
+  background: none;
+  padding: 5px 0 20px 0;
 }
