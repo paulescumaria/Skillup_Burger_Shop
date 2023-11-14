@@ -22,9 +22,9 @@ const Shipping = () => {
 
             <select>
               <option value="">Country</option>
-// Enter the code here for country dropdown           
-                  </option>
-                ))}
+               {/* Enter the code here for country dropdown            */}
+                  {/* </option> */}
+                {/* ))} */}
             </select>
           </div>
           <div>
@@ -35,7 +35,7 @@ const Shipping = () => {
             <label>Pin Code</label>
             <input type="number" placeholder="Enter Pincode" />
           </div>
-        // Enter thr code for contact           
+         {/* Enter thr code for contact            */}
           
           <Popup trigger=
                 {<button type = "button">Confirm Order</button>}

@@ -21,7 +21,7 @@ const MyOrders = () => {
           </thead>
 
           <tbody>
-//     Add the code for the table body
+{/* //     Add the code for the table body */}
            
           </tbody>
         </table>
