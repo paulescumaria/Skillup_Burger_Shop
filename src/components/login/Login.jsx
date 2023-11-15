@@ -7,7 +7,7 @@ function Login () {
     
     return (
         <div className="containerLog">
-            <div className="btns ">
+            <div className="btns">
                 <button id="btn1" onClick={() => {setShowLog(true)}}>Login</button>
                 <button id="btn2" onClick={() => {setShowLog(false)}}>Register</button>
             </div>

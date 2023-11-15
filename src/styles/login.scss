@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 80vw;
+    width: 10%;
     margin: 5vh 0 5vh 0;
 }
 
@@ -20,7 +20,7 @@
 .btns > button {
     text-decoration: none;
     border: 0;
-    width: 40vw;
+    width: 30vw;
     height: 5vh;
     text-transform: uppercase;
     border-radius: 5px;
@@ -45,7 +45,7 @@ h4 {
 }
 
 form > input {
-    width: 80vw;
+    width: 60vw;
     margin: 10px 0 10px 0;
     padding: 5px;
     border: 1px solid lightgray;
@@ -62,7 +62,7 @@ form > input {
 }
 
 .signIn {
-    width: 80vw;
+    width: 60vw;
     border: 0;
     padding: 5px 0 5px 0;
     text-transform: uppercase;
