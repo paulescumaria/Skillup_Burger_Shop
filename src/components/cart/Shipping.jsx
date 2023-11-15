@@ -1,8 +1,16 @@
-import React from "react";
-import { Country, State } from "country-state-city";
+import React, { useState } from "react";
+import { Country, State} from "country-state-city";
 import Popup from 'reactjs-popup';
+import { useGetCountries } from "../hooks/useGetCountries";
 
 const Shipping = () => {
+  // const { countries } =  useGetCountries();
+  const countries = Country.getAllCountries();
+  const states = State.getStatesOfCountry('AF');
+  const [code, setCode] = useState("");
+
+  console.log(countries)
+  console.log(states)
   return (
     <section className="shipping">
       <main>
@@ -20,7 +28,12 @@ const Shipping = () => {
               {/* Compelte the code for the COUNTRY DROPDOWN*/}
             <label>Country</label>
 
-            <select>
+            <select id="countrySelect" onChange={(e) => {setCode(() => e.target.value)}}>
+              {Country.getAllCountries().map((country, index) => {
+                return (
+                  <option key={index} value={country.isoCode}>{country.name}</option>
+                )
+              })}
               <option value="">Country</option>
                {/* Enter the code here for country dropdown            */}
                   {/* </option> */}
@@ -29,11 +42,22 @@ const Shipping = () => {
           </div>
           <div>
               {/* Add the code for the STATE DROPDOWN*/}
-           
+              <label>State</label>
+              <select id="stateSelect">
+                {State.getStatesOfCountry(code).map((state, index) => {
+                  return(
+                    <option key={index} >{state.name}</option>
+                  )
+                })}
+              </select>
           </div>
           <div>
             <label>Pin Code</label>
             <input type="number" placeholder="Enter Pincode" />
+          </div>
+          <div>
+            <label>Phone No.</label>
+            <input type="number" placeholder="Enter Phone" />
           </div>
          {/* Enter thr code for contact            */}
           
