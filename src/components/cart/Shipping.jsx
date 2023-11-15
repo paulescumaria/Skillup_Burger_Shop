@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Country, State} from "country-state-city";
 import Popup from 'reactjs-popup';
-import { useGetCountries } from "../hooks/useGetCountries";
 
 const Shipping = () => {
   // const { countries } =  useGetCountries();
